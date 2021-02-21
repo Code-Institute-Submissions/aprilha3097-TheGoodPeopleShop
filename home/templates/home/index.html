@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block header_content %}
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>TheGoodPeopleShop</h1>
+            <p>Where the good people shop</p>
+            <button type="button" class="btn btn-outline-light">Shop Now</button>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% include 'includes/section-1.html' %}
+{% endblock %}
