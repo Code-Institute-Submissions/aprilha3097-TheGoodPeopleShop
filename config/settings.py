@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
     # Local Apps
     'home',
+    'profiles',
 ]
 
 MIDDLEWARE = [
