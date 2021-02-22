@@ -4,6 +4,7 @@ from .models import Product
 def all_products(request):
     """ View to view all products """
     products = Product.objects.all()
+    
     return render(request, 'products/products.html', {'all_items': products})
 
 def product_detail(request, product_id):
