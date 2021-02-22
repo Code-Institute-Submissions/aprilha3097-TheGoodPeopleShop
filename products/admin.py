@@ -5,13 +5,13 @@ from .models import Product
 # Register your models here.
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
         'name',
+        'description',
         'price',
         'image'
     )
 
-    ordering = ('sku',)
+    ordering = ('name',)
 
 
 

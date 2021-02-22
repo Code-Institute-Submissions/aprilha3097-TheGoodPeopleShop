@@ -2,8 +2,21 @@
 
 {% block content %}
 <div class="container">
-    <div class="row" >
-        <h2>View All Products</h2>
+    <div class="row">
+        <h2 class="text-muted">View All Products</h2>
+    </div>
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div class="row">
+                {% for product in all_items %}
+                    <div class="container">
+                        <h3>{{ product.name }}</h3>
+                        <img src="{{ product.image.url }}" alt="">
+                        {{ product.description }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </div>
-    {% endblock %}
+{% endblock %}
