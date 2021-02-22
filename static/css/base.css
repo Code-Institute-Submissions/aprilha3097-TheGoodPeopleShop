@@ -71,6 +71,21 @@ html {
     color: grey;
 }
 
+/* ---- Products ----- */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+
+
+
 /* footer */
 footer {
     background-color: var(--color-black);
@@ -103,3 +118,4 @@ footer p {
     padding-top: 35px;
     margin: 0;
 }
+
