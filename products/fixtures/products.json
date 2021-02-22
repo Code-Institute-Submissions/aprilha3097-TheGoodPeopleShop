@@ -1,0 +1,178 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "name": "Ted Baker Pink Dress",
+            "description": "Size small, prink dress from Ted Baker's. Dress is in good condition.",
+            "charity": "New Incentives",
+            "price": 12.99,
+            "image": "ted_baker_dress.jpeg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "name": "Simple Red T Shirt",
+            "description": "A simple red tshirt. It is a size medium, but it fits a little small. Shirt is in excellent condition.",
+            "price": 10.99,
+            "charity": "Marie Curie",
+            "image": "t_shirt.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "name": "Almost New Rollar Skates",
+            "description": "Selling rollar skates that are almost brand new. It will fit a Mens size 10",
+            "price": 20.00,
+            "charity": "British Red Cross",
+            "image": "rollar_skates.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "name": "Nike Womens T Shirt Size: L",
+            "description": "A pink Nike women's t-shirt. Will fit a women's size L. In new condition.",
+            "price": 12.00,
+            "charity": "WWF",
+            "image": "nike_womens_t_shirt.jpeg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "name": "Nike Men's Shoes Size 11",
+            "description": "A nike men's shoes, that is a size 11. In good condition. It has not been worn too many times.",
+            "price": 25.00,
+            "charity": "RSPB",
+            "image": "nike_shoes.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "name": "Nike Air Black T Shirt",
+            "description": "A Nike Air T Shirt, size M. In good condition.",
+            "price": 10.00,
+            "charity": "Age UK",
+            "image": "nike_air_t_shirt.jpeg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "name": "Kitchen Aid Mixer",
+            "description": "Kitchen Aid mixer, in excellent condition.",
+            "price": 40.00,
+            "charity": "Seva",
+            "image": "kitchen_aid_mixer.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "name": "Grey Sweater",
+            "description": "Women's grey sweatshirt with a large heart on the front. Size M.",
+            "price": 10.00,
+            "charity": "Living Goods",
+            "image": "heart_sweater.jpeg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "name": "Colorful Happy Sweater",
+            "description": "A colorful sweater with happy written across. Would be great for a young teenager, size L.",
+            "price": 10.00,
+            "charity": "Evidence Action",
+            "image": "happy_sweater.jpeg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "name": "Shirt with Ducks",
+            "description": "A shirt with Ducks on it. Womens size S, in very good condition.",
+            "price": 10.00,
+            "charity": "Alzheimer's Research UK",
+            "image": "duck_shirt.jpeg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "name": "Simple Ikea Desk",
+            "description": "A simple Ikea desk. Is in good condition. It has slight wear from a few months use, but in good condition otherwise.",
+            "price": 20.00,
+            "charity": "Fred Hollows Foundation",
+            "image": "desk.jpeg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "name": "Converse Shoes for Sale",
+            "description": "Size 12 converse shoes. Never worn before.",
+            "price": 25.00,
+            "charity": "Guide Dogs",
+            "image": "converse_shoes.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "name": "Small Black Coffee Table",
+            "description": "Small coffee table. In good condition. Only slight wear.",
+            "price": 5.00,
+            "charity": "One Acre Fund",
+            "image": "coffee_table.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "name": "Bike for Sale. Good condition.",
+            "description": "Bike for sale, in very good condition. Has only a couple miles ridden on it.",
+            "price": 75.00,
+            "charity": "National Trust",
+            "image": "bike.png"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "name": "Beats Headphones",
+            "description": "Beats headphones for sale. In good condition, no longer needed.",
+            "price": 20.00,
+            "charity": "Salvation Army",
+            "image": "beats_headphones.jpeg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "name": "Addidas Shoes Size 7",
+            "description": "A size 7 Addidas shoes. Only some wear, but in good condition otherwise.",
+            "price": 10.00,
+            "charity": "Mind",
+            "image": "addidas_shoes.jpg"
+        }
+    }
+]
