@@ -84,7 +84,13 @@ html {
 }
 
 
+.btt-link {
+    cursor: pointer;
+}
 
+.text-black {
+    color: #000 !important;
+}
 
 /* footer */
 footer {
