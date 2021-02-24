@@ -10,8 +10,6 @@ from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from cart.contexts import cart_contents
-)
-
 
 def checkout(request):
 
