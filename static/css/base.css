@@ -125,3 +125,11 @@ footer p {
     margin: 0;
 }
 
+/* toasts */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 9999;
+    width: 300px;
+}

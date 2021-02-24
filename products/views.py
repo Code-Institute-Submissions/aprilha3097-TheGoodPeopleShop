@@ -29,6 +29,7 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
+                messages.error(request, "Looks like you didn't enter any keywords. Please try again!")
                 return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(charity__icontains=query)
@@ -62,6 +63,7 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
+            messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
     else:
         form = ProductForm()
@@ -80,9 +82,11 @@ def edit_product(request, product_id):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
     else:
         form = ProductForm(instance=product)
+        messages.info(request, f'You are editing {product.name}')
 
     template = 'products/edit_product.html'
     context = {

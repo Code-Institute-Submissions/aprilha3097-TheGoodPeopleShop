@@ -41,6 +41,7 @@
             {% endblock %}
         </div>
     </header>
+
     <main>
         {% block content%}
         {% endblock %}
@@ -50,7 +51,13 @@
         {% include 'includes/footer.html' %}
     </div>
 
+    <!-- TOAST MESSAGES -->
+    {% include 'includes/messages.html' %}
+
     {% block postloadjs %}
+        <script type="text/javascript">
+            $('.toast').toast('show');
+        </script>
     {% endblock %}
 </body>
 
