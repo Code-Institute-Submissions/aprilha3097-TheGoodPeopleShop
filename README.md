@@ -56,6 +56,52 @@ Information Architecture: Visual representation of the product's infustructure
 ### Testing 
 You can view more in depth the testing required for this project in the following documentation: [Testing Document](INSERT TESTING DOCUMENTATION LINK)
 
+Manual Testing
+1. On index (home page) navigation links go to correct urls
+
+Login:
+    1. URL link to login to account works - goes to correct template and works as expected
+    My Account > Login
+    2. Username input is required
+    3. If username is incorrect to what has been registered, message notifies user username is incorrect
+    4. Password is required
+    5. If password is incorrect, user will be notified
+    6. When successful, Sign In button will redirect to home page
+Forgotten Password:
+    1. Forgotten Password link redirects to correct page
+    2. User required to input correct email address
+    3. Email from console directs to correct password reset page
+    4. Password reset successfull page redirect
+    5. Password reset functionality works correctly 
+Logout: 
+    1. My Account ? Logout will redirect to Sign Out page
+    2. User is prompted to confirm signout
+    3. Sign Out will end session user 
+    4. Toast message will be success and confirm user signout
+    5. User is redirected to the home page
+Registration: 
+    1. My Account > Register
+    2. Redirects to correct Sign Up page
+    3. Email, username, password is required.
+    4. If email or username is already registered, user is warned email or username has been taken
+    5. Email and password confirmations must match initial email and password
+    6. Signup redirects to home page once form has been successfully completed
+Search:
+    1. If user searches nothing, no products will appear and error toast will appear
+    2. If search is entered, but no items match, no products will appear in result 
+    3. If search is entered and items match by name, description or charity, products will appear correctly 
+Filter: 
+    1. Filter by price and name work as expected 
+About Us:
+    1. Link to About Us page directs to correct template
+Add Product: 
+    1. Name, Description, Price and Image are required to submit form
+    2. Price must not be more than 4 digits before decimal point or error will appear
+    3. User must submit an image that is choosen locally to their machine. 
+    4. Once valid form is submitted, button redirects to the new products detail page
+Product Detail:
+    1. Product detail page displays correct Information
+    2. If user
 ## Deployment
 
 ### Deploying to Heroku ###
