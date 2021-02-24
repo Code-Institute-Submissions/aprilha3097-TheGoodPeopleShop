@@ -17,7 +17,10 @@
                 <strong><p class="mb-0">{{ product.name }}</p></strong>
                 <em><p class="mb-0">Charity: {{ product.charity }}</p></em>
                 <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-    
+                <small class="ml-3">
+                    <a href="{% url 'edit_product' product.id %}">Edit</a>
+                    <a class="text-danger" href="#">Delete</a>
+                </small>
                 <p class="mt-3">{{ product.description }}</p>
                 <!-- Form to add product to the shopping bag -->
                 <form class="form" action="#" method="POST">
