@@ -48,7 +48,6 @@ INSTALLED_APPS = [
 
     # Local Apps
     'home',
-    'profiles',
     'cart',
     'checkout',
     'products',
