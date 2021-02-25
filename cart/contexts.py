@@ -1,27 +1,14 @@
 from decimal import Decimal
 from django.conf import settings
-from django.shortcuts import get_object_or_404
-from products.models import Product
 
 # Functionality to track what is in the shopping bag
 
-
+#Make Contexts dicationary available to all of application 
 def cart_contents(request):
 
     cart_items = []
     total = 0
     product_count = 0
-    cart = request.session.get('cart', {})
-
-    for item_id, quantity in cart.items():
-        product = get_object_or_404(Product, pk=item_id)
-        total += quantity * product.price
-        product_count += quantity
-        cart_items.append({
-            'item_id': item_id,
-            'quantity': quantity,
-            'product': product,
-        })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
@@ -41,5 +28,5 @@ def cart_contents(request):
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
     }
-# everything available in the context will be available in every template
+    # everything available in the context will be available in every template
     return context

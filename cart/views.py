@@ -4,7 +4,6 @@ from products.models import Product
 
 # Create your views here.
 
-
 def view_cart(request):
     """ A view that renders the bag contents page """
 
