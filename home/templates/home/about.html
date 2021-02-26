@@ -1,75 +1,77 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-<!-- About Section template from W3Schools -->
-<div class="about-section">
-    <h1>TheGoodPeopleShop</h1>
-    <p>Donate your no longer wanted items to someone that wants them.</p>
-    <p>Then, all the proceeds from your sell will go to your favorite charity</p>
-</div>
-
+<div class="overlay"></div>
 <div class="container">
-    <h1>Our Purpose</h1>
-    <p>
-        We are a sibling trio. We loved volunteering our time to many wonderful charities growing up.
-        There were times we wanted to donate to a cause when we couldn't volunteer, but we
-        didn't have the hard cash to do so. We donated our previously loved items to charity stores, 
-        but found that charities we truly loved and wanted to doante to didn't have a store. So, we thought,
-        surely there are other good people that want these donations
-        that too want to donate to our favorite charities. So, then we created, <strong>TheGoodPeopleShop</strong>.
-    </p>
-    <p>
-        We want to make donating easy. Simply create an account, input details of your previously loved
-        items on our simple form (make sure to add as much detail of the item and photos), then submit.
-        You choose which charity you want the proceeds to go to. We partner with loads of amazing charities.
-        Once that's all done, a good person will come around, buy your item and there we go! All the proceeds
-        to your favorite charity and someone gets something out of it too. Start now!
-    </p>
-</div>
-
-<h2 style="text-align:center">Our Team</h2>
-<div class="row">
-    <div class="column">
-        <div class="card">
-            <img src="{% static 'images/about/riley.jpg' %}" alt="Riley" style="width:100%">
-            <div class="container">
-                <h2>Riley Hayes Thompson</h2>
-                <p class="title">CEO & Founder</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+    <div class="row">
+        <div class="col">
+            <h1>TheGoodPeopleShop</h1>
+            <p>Donate your no longer wanted items to someone that wants them.</p>
+            <p>Then, all the proceeds from your sell will go to your favorite charity</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>Our Purpose</h1>
+            <p>
+                We are a sibling trio. We loved volunteering our time to many wonderful charities growing up.
+                There were times we wanted to donate to a cause when we couldn't volunteer, but we
+                didn't have the hard cash to do so. We donated our previously loved items to charity stores,
+                but found that charities we truly loved and wanted to doante to didn't have a store. So, we thought,
+                surely there are other good people that want these donations
+                that too want to donate to our favorite charities. So, then we created,
+                <strong>TheGoodPeopleShop</strong>.
+            </p>
+            <p>
+                We want to make donating easy. Simply create an account, input details of your previously loved
+                items on our simple form (make sure to add as much detail of the item and photos), then submit.
+                You choose which charity you want the proceeds to go to. We partner with loads of amazing charities.
+                Once that's all done, a good person will come around, buy your item and there we go! All the proceeds
+                to your favorite charity and someone gets something out of it too. Start now!
+            </p>
+        </div>
+    </div>
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <img src="{% static 'images/about/riley.jpg' %}" alt="Riley" style="width:100%">
+                <div class="container">
+                    <h2>Riley Hayes Thompson</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="{% static 'images/about/ezra.jpg' %}" alt="Ezra" style="width:100%">
+                <div class="container">
+                    <h2>Ezra Michael Thompson</h2>
+                    <p class="title">Designer</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="{% static 'images/about/frankie.jpg' %}" alt="Frankie" style="width:100%">
+                <div class="container">
+                    <h2>Charlie Sun Thompson</h2>
+                    <p class="title">CTO</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="column">
-        <div class="card">
-            <img src="{% static 'images/about/ezra.jpg' %}" alt="Ezra" style="width:100%">
-            <div class="container">
-                <h2>Ezra Michael Thompson</h2>
-                <p class="title">Designer</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="column">
-        <div class="card">
-            <img src="{% static 'images/about/frankie.jpg' %}" alt="Frankie" style="width:100%">
-            <div class="container">
-                <h2>Frankie Sun Thompson</h2>
-                <p class="title">CTO</p>
-                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            </div>
-        </div>
-    </div>
-
 </div>
 {% endblock %}
