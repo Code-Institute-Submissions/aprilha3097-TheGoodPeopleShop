@@ -17,7 +17,9 @@
         {% for charity in charities %}
         <div class="col mb-4">
             <div class="card">
-                <img src="{{ charity.image.url }}" class="card-img-top" alt="{{ charity.name }}">
+                <a href="{{ charity.url }}" target="_blank">
+                    <img src="{{ charity.image.url }}" class="card-img-top" alt="{{ charity.name }}">
+                </a>
                 <div class="card-body">
                     <h5 class="card-title">{{ charity.name }}</h5>
                     <p class="card-text">{{ charity.description }}</p>
