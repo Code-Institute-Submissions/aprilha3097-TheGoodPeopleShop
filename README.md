@@ -3,31 +3,72 @@
 Milestone Project # 4 - [The Good People Shop](INSERT URL TO FINAL PROJECT)
 
 Do you have items in your home you no longer need? Want to donate to a charity, but you don't have any cash to give?
-Donate your no longer need items and sell them to people that want to buy them. All the money from your sale will straight
+Donate your no longer needed items and sell them to people that want to buy them. All the money from your sale will go straight
 to your favorite charity of choice.
 
-In TheGoodPeopleShop, you can view all of the available products we currently have, add a product if 
-you are a registered user and view a list of great charities we currently have verified. 
+In TheGoodPeopleShop, you can view all of the available products we currently have, add a product to the cart, and if 
+you are a registered user you can add an itemto sell. 
 
 ## UX and Elements of User Experiences
 
 ### Strategy: 
-The purpose of this site is to provide users a peer-to-peer experience. An ecommerce experience which benefits for everyone.
+The purpose of this site is to provide users a peer-to-peer experience. An ecommerce experience which benefits everyone.
 
-### Scope:
-Functional Requirements
+### Wireframes
+* Wireframes for the initial structural design of the site was created using [Balsamiq](https://balsamiq.com/).
 
-Content Requirements
+#### Desktop
 
-### Structure
-Information Architecture: Visual representation of the product's infustructure
+Home Page:
+<img src="" width="400">
 
-### Skeleton
+About Page:
+<img src="" width="400">
 
-#### Wireframes
+View All Products:
+<img src="" width="400">
+
+View Product in Detail:
+<img src="" width="400">
+
+View All Charities:
+<img src="" width="400">
+
+View Shopping Cart:
+<img src="" width="400">
+
+Checkout View:
+<img src="" width="400">
+
+Contact Us:
+<img src="" width="400">
+
+#### Mobile
+
+Home Page:
+<img src="" width="400">
+
+About Page:
+<img src="" width="400">
+
+View All Products:
+<img src="" width="400">
+
+View Product in Detail:
+<img src="" width="400">
+
+View All Charities:
+<img src="" width="400">
+
+View Shopping Cart:
+<img src="" width="400">
+
+Checkout View:
+<img src="" width="400">
 
 ### User Stories:
-Generic user stories for all users 
+
+#### Generic user stories for all users 
 - As a user, I want to access the website from a computer, mobile or tablet to be able to use the sites functionality anywhere
 - As a user, I want to view a list of all avilable products, to select to buy
 - As a user, I want to view individual product details, so I can view pricing of item and further details of the condition of the item
@@ -40,16 +81,16 @@ Generic user stories for all users
 - As a user, I want to view an order confirmation after my checkout, so I can verify the items that I have bought are correct in the confirmation
 - As a user, I want to recieve an email confirmation after checkout, so I can keep the information for my personal records
 
-New users
+#### New Users
 - As a user, I want to easily register for a new account, so I can have a personalised account
 - As a user, I want to recieve and email confirmation once completing registration, so I can verify with the site that my account was created successfully
 
-Returning users
+#### Returning Users
 - As a user, I want to easily login or logout of my account, to access my details or log out so others don't have access to my details
 - As a user, I want to be able to recover my password incase I forget my password, so I can recover access to my account
 - As a user, I want to be able to view personalised information, such as order history and order confirmation details and saved delivery information
 
-Administrator
+#### Administrator
 - As the site owner, I want to be able to edit or update product details, so owner can manually change details of the product
 - As the site owner, I want to be able to delete a product, so if the product is not appropriate or not available the owner can manually do this 
 
