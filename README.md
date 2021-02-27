@@ -20,51 +20,57 @@ The purpose of this site is to provide users a peer-to-peer experience. An ecomm
 #### Desktop
 
 Home Page:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/desktop/homepage.png" width="400">
 
 About Page:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/desktop/about.png" width="400">
 
 View All Products:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/desktop/all-products.png" width="400">
 
 View Product in Detail:
-<img src="" width="400">
-
-View All Charities:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/desktop/product-detail.png" width="400">
 
 View Shopping Cart:
-<img src="" width="400">
-
-Checkout View:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/desktop/shopping-cart.png" width="400">
 
 Contact Us:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/desktop/contact-us.png" width="400">
+
+Checkout View:
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/desktop/checkout.png" width="400">
+
+View All Charities:
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/desktop/charities.png" width="400">
+
+Add Product:
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/desktop/add-product.png" width="400">
 
 #### Mobile
 
 Home Page:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/mobile/mobile-home.png" width="400">
 
 About Page:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/mobile/mobile-about.png" width="400">
 
 View All Products:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/mobile/mobile-all-products.png" width="400">
 
 View Product in Detail:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/mobile/mobile-product-detail.png" width="400">
 
 View All Charities:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/mobile/mobile-charity.png" width="400">
 
 View Shopping Cart:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/mobile/mobile-cart.png" width="400">
 
 Checkout View:
-<img src="" width="400">
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/mobile/mobile-checkout.png" width="400">
+
+Contact Us:
+<img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/mobile/mobile-contact-us.png" width="400">
 
 ### User Stories:
 
