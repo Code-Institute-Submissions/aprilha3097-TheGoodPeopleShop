@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Contact - {{ block.super }}{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  <div class="overlay"></div>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form role="form" action="" method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+                {{ field | as_crispy_field }}
+            {% endfor %}
+            <button class="btn btn-success" type="submit">Submit</button>
+        </form>
+    </div>
+{% endblock %}
