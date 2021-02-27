@@ -27,6 +27,23 @@ body {
     padding: 13%;
 }
 
+.about-header {
+    text-align: center;
+}
+
+.about-header h1{
+    font-size: 5rem;
+}
+
+.about-people {
+    padding: 5%;
+}
+
+.about-purpose {
+    
+}
+
+
 /* from Bulma */
 .icon {
     align-items: center;
