@@ -41,37 +41,62 @@
         </div>
     </div>
     <h2 style="text-align:center">Our Team</h2>
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <img src="{% static 'images/about/riley.jpg' %}" alt="Riley" style="width:100%">
-                <div class="container">
-                    <h2>Riley Hayes Thompson</h2>
-                    <p class="title">CEO & Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                </div>
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/about/riley.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Riley Hayes Thompson</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <img src="{% static 'images/about/ezra.jpg' %}" alt="Ezra" style="width:100%">
-                <div class="container">
-                    <h2>Ezra Michael Thompson</h2>
-                    <p class="title">Designer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/about/ezra.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Ezra Michael Thompson</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
-        <div class="col">
-            <div class="card">
-                <img src="{% static 'images/about/frankie.jpg' %}" alt="Frankie" style="width:100%">
-                <div class="container">
-                    <h2>Charlie Sun Thompson</h2>
-                    <p class="title">CTO</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/about/ezra.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Charlie Sun Thompson</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
         </div>
     </div>
 </div>
 {% endblock %}
+
+<div class="card-deck">
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/about/riley.jpg' %}" alt="Riley Hayes Thompson">
+        <div class="card-body">
+            <h5 class="card-title">Riley Hayes Thompson</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="{% static 'images/about/ezra.jpg' %}" alt="Ezra Michael Thompson">
+        <div class="card-body">
+            <h5 class="card-title">Ezra Michael Thompson</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="{% static '/images/about/charlie.jpg' %}" alt="Charlie Sun Thompson">
+        <div class="card-body">
+            <h5 class="card-title">Charlie Sun Thompson</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>
