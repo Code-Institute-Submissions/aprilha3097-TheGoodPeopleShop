@@ -1,0 +1,182 @@
+[
+    {
+        "pk": 1,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Marie Curie",
+            "description": "Marie Curie is the UK’s leading end of life charity. We provide frontline nursing and hospice care, a free support line and a wealth of information and support on all aspects of dying, death and bereavement.",
+            "url": "https://www.mariecurie.org.uk/",
+            "image": "Marie_Curie.png"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Animal Welfare Fund",
+            "description": "AWF is run by veterinary and animal welfare professionals with a collective vision for all animals to enjoy a better life, free from pain and suffering.",
+            "url": "https://www.animalwelfarefoundation.org.uk/",
+            "image": "Animal_Welfare_Fund.svg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Against Malaria Foundation",
+            "description": "We help protect people from malaria. We fund anti-malaria nets, specifically long-lasting insecticidal nets (LLINs), and work with distribution partners to ensure they are used. We track and report on net use and malaria case data.",
+            "url": "https://www.againstmalaria.com/",
+            "image": "Against_Malaria_Foundation.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Helen Keller International",
+            "description": "Since we were founded in 1915, our work has evolved from providing assistance to soldiers blinded during their service in World War I. Today, our programs prioritize preventing and treating vision loss and blindness—as well as addressing major global health problems such as malnutrition and neglected diseases that threaten sight, productivity, and well-being.",
+            "url": "https://www.hki.org/",
+            "image": "Helen_Keller_International.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Innovations for Proverty Action",
+            "description": "Innovations for Poverty Action (IPA) is a research and policy nonprofit that discovers and promotes effective solutions to global poverty problems. IPA brings together researchers and decision-makers to design, rigorously evaluate, and refine these solutions and their applications, ensuring that the evidence created is used to improve the lives of the world’s poor.",
+            "url": "https://www.poverty-action.org/",
+            "image": "Innovations_for_Proverty_Action.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Living Goods",
+            "description": "Living Goods leverages a powerful combination of catalytic technology, high-impact training, and quality treatments that empower government community health workers (CHWs) to deliver quality care to their neighbors’ doorsteps.",
+            "url": "https://livinggoods.org/",
+            "image": "Living_Goods.png"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "charities.charity",
+        "fields": {
+            "name": "One Acre Fund",
+            "description": "One Acre Fund is a non-profit social enterprise that supplies financing and training to help smallholders grow their way out of hunger and build lasting pathways to prosperity.",
+            "url": "https://oneacrefund.org/",
+            "image": "One_Acre_Fund.png"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Oxfam",
+            "description": "Oxfam is a confederation of 20 independent charitable organizations focusing on the alleviation of global poverty, founded in 1942 and led by Oxfam International.",
+            "url": "https://www.oxfam.org.uk/",
+            "image": "Oxfam.png"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Macmillan Cancer Support",
+            "description": "Macmillan Cancer Support is one of the largest British charities and provides specialist health care, information and financial support to people affected by cancer. It also looks at the social, emotional and practical impact cancer can have, and campaigns for better cancer care.",
+            "url": "https://www.macmillan.org.uk/",
+            "image": "Macmillan_Cancer_Support.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Cancer Research UK",
+            "description": "As the world's largest independent cancer research charity it conducts research into the prevention, diagnosis and treatment of the disease. Research activities are carried out in institutes, universities and hospitals across the UK, both by the charity's own staff and by its grant-funded researchers.",
+            "url": "https://www.cancerresearchuk.org/",
+            "image": "Cancer_Research_UK.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Project Healthy Children",
+            "description": "We scale technology and business solutions that put critical nutrients into the food that hundreds of millions of malnourished people eat the most. By doing so, we are guaranteeing that every meal, for every mother and child, contains lifesaving nutrients, forever.",
+            "url": "https://projecthealthychildren.com/",
+            "image": "Project_Healthy_Children.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "charities.charity",
+        "fields": {
+            "name": "St. John Ambulance",
+            "description": "We are the charity that steps forward in the moments that matter, to save lives and keep communities safe. All our charitable work is entirely funded by donations, and we are a market leader in the provision of workplace training, first aid supplies and event and ambulance services.",
+            "url": "https://www.sja.org.uk/",
+            "image": "St_John_Ambulance.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Samaritans",
+            "description": "Samaritans is a registered charity aimed at providing emotional support to anyone in emotional distress, struggling to cope, or at risk of suicide throughout the United Kingdom and Ireland, often through their telephone helpline.",
+            "url": "https://www.samaritans.org/",
+            "image": "Samaritans.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "charities.charity",
+        "fields": {
+            "name": "British Red Cross",
+            "description": "The British Red Cross helps people in crisis, responding to disasters, conflicts and individual emergencies here in the UK and across the world. We enable vulnerable people to prepare for and respond to emergencies in their own communities.",
+            "url": "https://www.redcross.org.uk/",
+            "image": "British_Red_Cross.png"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Alzheimer's Research UK",
+            "description": "We are the leading dementia and Alzheimer’s disease research charity. Find out about Alzheimer’s Research UK, our journey so far, and our vision of a world where people are free from the fear, harm and heartbreak of dementia.",
+            "url": "https://www.alzheimersresearchuk.org/",
+            "image": "Alzheimers_Research_UK.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "charities.charity",
+        "fields": {
+            "name": "WWF",
+            "description": "WE’RE FIGHTING FOR YOUR WORLD. We’re determined to stop the destruction of nature and help it to recover. We’re focusing on some really big challenges that will help turn things around.",
+            "url": "https://www.wwf.org.uk/",
+            "image": "WWF.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Age UK",
+            "description": "Age UK is the country's leading charity dedicated to helping everyone make the most of later life. We provide companionship, advice and support for older people who need it most.",
+            "url": "https://www.ageuk.org.uk/",
+            "image": "Age_UK.png"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "charities.charity",
+        "fields": {
+            "name": "Prostate Cancer UK",
+            "description": "Prostate Cancer UK's top priority is funding research to stop prostate cancer killing men. We’re investing millions to find better treatments and better tests that can spot fast-growing cancers early, and could be used in a screening programme to save thousands of lives.",
+            "url": "https://prostatecanceruk.org/", 
+            "image": "Prostate_Cancer_UK.png"
+        }
+    }
+]
