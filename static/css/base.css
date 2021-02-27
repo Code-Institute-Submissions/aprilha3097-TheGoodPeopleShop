@@ -13,7 +13,18 @@ body {
 
 .hero-text h1 {
     font-size: 6rem;
+    color: white;
     text-align: center;
+}
+
+.hero-text p {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.hero-section {
+    padding: 13%;
 }
 
 /* from Bulma */
