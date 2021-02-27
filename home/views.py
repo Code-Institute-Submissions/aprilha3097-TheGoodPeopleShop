@@ -1,5 +1,4 @@
 from django.shortcuts import render, get_object_or_404
-from products.models import Product
 
 def index(request):
     """ A view to return the Index page """
