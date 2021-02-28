@@ -5,7 +5,8 @@ from products.models import Product
 
 # Functionality to track what is in the shopping bag
 
-#Make Contexts dicationary available to all of application 
+
+# Make Contexts dicationary available to all of application
 def cart_contents(request):
 
     cart_items = []

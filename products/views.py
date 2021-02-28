@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 from .models import Product
 from .forms import ProductForm
 
+
 def all_products(request):
     """ View to view all products """
     products = Product.objects.all()
@@ -37,7 +38,7 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(charity__icontains=query)
             products = products.filter(queries)
 
-    current_sorting  = f'{sort}_{direction}'
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
@@ -47,9 +48,9 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
+
 def product_detail(request, product_id):
     """ A view to show individual product details """
- 
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
@@ -57,6 +58,7 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def add_product(request):
@@ -79,6 +81,7 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_product(request, product_id):
@@ -103,6 +106,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):

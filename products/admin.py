@@ -15,5 +15,4 @@ class ProductAdmin(admin.ModelAdmin):
     ordering = ('name',)
 
 
-
 admin.site.register(Product, ProductAdmin)

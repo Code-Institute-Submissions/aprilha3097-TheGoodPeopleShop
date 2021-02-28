@@ -69,6 +69,7 @@ CHARITIES = [
 
 sorted_charities = sorted(CHARITIES)
 
+
 class Product(models.Model):
 
     name = models.CharField(max_length=254)
@@ -76,7 +77,7 @@ class Product(models.Model):
     charity = models.CharField(
         max_length=254,
         choices=sorted_charities,
-        default = '',
+        default='',
     )
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(null=True, blank=True)

@@ -4,10 +4,12 @@ from products.models import Product
 
 # Create your views here.
 
+
 def view_cart(request):
     """ A view that renders the bag contents page """
 
     return render(request, 'cart/cart.html')
+
 
 def add_to_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
@@ -37,6 +39,8 @@ def add_to_cart(request, item_id):
 
 
 """ Remove an item in the shopping cart view """
+
+
 def remove_from_cart(request, item_id):
 
     try:

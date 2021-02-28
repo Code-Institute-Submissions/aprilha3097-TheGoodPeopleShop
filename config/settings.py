@@ -128,7 +128,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': os.path.join(BASE_DIR, 'db.sqlite'),
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite'),
             }
     }
 
@@ -197,10 +197,6 @@ if 'USE_AWS' in os.environ:
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-
-
-
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

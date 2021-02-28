@@ -14,5 +14,4 @@ class CharityAdmin(admin.ModelAdmin):
     ordering = ('name',)
 
 
-
 admin.site.register(Charity, CharityAdmin)
