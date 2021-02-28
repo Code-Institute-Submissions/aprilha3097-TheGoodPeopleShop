@@ -504,7 +504,7 @@ These items are available already in the requirements.txt file.
 
 ### Code
 * This project was developed by following the Code Institutes video lessons and project, Boutique Ado. The stylings and basic funcationalities were
-influced by the project. TheGoodPeopleShop project was modified to fit the purposes of the site. 
+influenced by the project. TheGoodPeopleShop project was modified to fit the purposes of the site. 
 
 * Stack Overflow - was a great aid in understanding and working through errors that came up during the creation of the project. 
 
@@ -515,6 +515,6 @@ contact us funcationality.
 used as great resources in understanding the complexities of Django.
 
 ### Media
-* All images in this site were discovered through Google Images. The lower quality images reflect the type of images user will
+* All images in this site were discovered through [Google Images](https://images.google.com/?hl=xx-elmer&gws_rd=ssl). The lower quality images reflect the type of images user will
 upload when selling items on the site. 
 * Charity images were taken from their respected charities website. 
