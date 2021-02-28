@@ -1,6 +1,6 @@
 # The Good People Shop
 
-Milestone Project # 4 - [The Good People Shop](INSERT URL TO FINAL PROJECT)
+Milestone Project # 4 - [The Good People Shop](https://thegoodpeopleshop.herokuapp.com/)
 
 Do you have items in your home you no longer need? Want to donate to a charity, but you don't have any cash to give?
 Donate your no longer needed items and sell them to people that want to buy them. All the money from your sale will go straight
@@ -8,6 +8,8 @@ to your favorite charity of choice.
 
 In TheGoodPeopleShop, you can view all of the available products we currently have, add a product to the cart, and if 
 you are a registered user you can add an itemto sell. 
+
+Deployed in Heroku: [Final Project](https://thegoodpeopleshop.herokuapp.com/)
 
 ## UX and Elements of User Experiences
 
@@ -281,10 +283,6 @@ once a verified user pruchases the item it will be removed from the site.
 
 
 ### Information Architecture
-#### Database choice
-During the development phase I worked with **sqlite3** database which is installed with Django.   
-For deployment(production), a **PostgreSQL** database is provided by Heroku as an add-on.
-- The **User model** used in this project is provided by Django as a part of defaults `django.contrib.auth.models`. More information about Django’s authentication system can be found [here](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/).
 
 ### Data Modelling
 
@@ -354,6 +352,119 @@ You can view more in depth the testing required for this project in the followin
 
 ## Deployment
 
+## Deployment
+
+*TheGoodPeopleShop* was developed using GitPod as its IDE and Github for the verions control.
+
+### Cloning *TheGoodPeopleShope* from GitHub ###
+
+1: **Clone** the *TheGoodPeopleShop* repository by downloading from [source](https://github.com/aprilha3097/TheGoodPeopleShop.git),
+
+2: **Navigate** to this folder in your terminal window and **install** required modules to run the application using the following command:
+
+```bash
+python -m pip -r requirements.txt
+```
+
+Note: More information on the cloning processing can be found: [GitHub Help page](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+   
+
+3: **Initialize** virtual environment by typing the following command into the terminal:
+
+```
+py -m venv virtual
+```
+
+4: Set up environment variables.     
+Note, that this process will be different depending on IDE you use.     
+    ```bash 
+    import os  
+    os.environ["DEVELOPMENT"] = "True"    
+    os.environ["SECRET_KEY"] = "<Your Secret key>"    
+    os.environ["STRIPE_PUBLIC_KEY"] = "<Your Stripe Public key>"    
+    os.environ["STRIPE_SECRET_KEY"] = "<Your Stripe Secret key>"    
+    os.environ["STRIPE_WH_SECRET"] = "<Your Stripe WH_Secret key>"    
+    os.environ["GOOGLE_MAP_KEY"] = "<Your Google Map key>" 
+     ```
+       
+Note: Read more about how to set up the Stripe keys in the [Stripe Documentation](https://stripe.com/docs/keys)
+    
+5: Install all requirements from the **requirements.txt** file putting this command into your terminal:     
+`pip3 install -r requirements.txt`     
+
+6: In the terminal in your IDE migrate the models to crete a database using the following commands:    
+`python3 manage.py makemigrations`     
+`python3 manage.py migrate`     
+
+7: Load the data fixtures(**products**, **charities**) in that order into the database using the following command:    
+`python3 manage.py loaddata <fixture_name>`
+
+8: Create a superuser to have an access to the the admin panel(you need to follow the instructions then and insert username,email and password):    
+`python3 manage.py createsuperuser`   
+
+9: You will now be able to run the application using the following command:     
+`python3 manage.py runserver`     
+
+10: To access the admin panel, you can add the `/admin` path at the end of the url link and login using your superuser credentials.
+
+### Heroku Deployment
+*To start Heroku Deployment process, you need to clone the project as described in the local deployment from the above section* 
+
+To deploy the project to [Heroku](https://heroku.com/) the following steps need to be completed:    
+1: Create a **requirement.txt** file, which contains a list of the dependencies, using the following command in the terminal:    
+`pip3 freeze > requirements.txt`    
+
+2: Create a **Procfile**, in order to tell Heroku how to run the project, using the following command in the terminal:      
+`web: gunicorn config.wsgi:application`    
+
+3: `git add`, `git commit` and `git push` these files to GitHub repository.     
+
+4: Install the following required for deployment:
+
+**gunicorn**
+**dj-database-url**
+**Psycopg** 
+
+These items are available already in the requirements.txt file. 
+
+5: On the [Heroku](https://heroku.com/) website you need to create a **new app**, assigne a name (must be unique),set a region to the closest to you and click **Create app**.  
+
+6: Go to **Resources** tab in Heroku, then in the **Add-ons** search bar look for **Heorku Postgres**, select **Hobby Dev — Free** and click **Provision** button to add it to your project.     
+
+7: In Heroku **Settings** click on **Reveal Config Vars**.   
+
+8: Set the following config variables there:     
+
+| KEY            | VALUE         |
+|----------------|---------------|
+| AWS_ACCESS_KEY_ID | `<your aws access key>`  |
+| AWS_SECRET_ACCESS_KEY | `<your aws secret access key>`  |
+| DATABASE_URL| `<your postgres database url>`  |
+| EMAIL_HOST_PASS | `<your email password(generated by Gmail)>` |
+| EMAIL_HOST_USER| `<your email address>`  |
+| SECRET_KEY | `<your secret key>`  |
+| STRIPE_PUBLIC_KEY| `<your stripe public key>`  |
+| STRIPE_SECRET_KEY| `<your stripe secret key>`  |
+| STRIPE_WH_SECRET| `<your stripe wh key>`  |
+| USE_AWS | `True`  |
+     
+
+9: Migrate the database models to the Postgres database using the following commands in the terminal:    
+`python3 manage.py makemigrations`     
+`python3 manage.py migrate`     
+
+11: Load the data fixtures(**products**, **charities**) into the  Postgres database using the following command:     
+`python3 manage.py loaddata <fixture_name>`   
+
+12: Create a **superuser** for the Postgres database by running the following command(*you need to follow the instructions and inserting username,email and password*):      
+`python3 manage.py createsuperuser`     
+
+13: You need to remove your Postgres URL database from the settings and uncomment the default DATABASE settings code in the settings.py file.    
+    
+14: Add your Heroku app URL to **ALLOWED_HOSTS** in the settings.py file.
+
+15: You can connect Heroku to GitHub to automatically deploy each time you push to GitHub.    
+
 
 ### Credit
 
@@ -370,5 +481,6 @@ contact us funcationality.
 used as great resources in understanding the complexities of Django.
 
 #### Media
-* All images in this site were discovered through Google Images. 
+* All images in this site were discovered through Google Images. The lower quality images reflect the type of images user will
+upload when selling items on the site. 
 * Charity images were taken from their respected charities website. 
