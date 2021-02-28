@@ -279,6 +279,76 @@ once a verified user pruchases the item it will be removed from the site.
 2. [PostgreSQL](https://www.postgresql.org/)
     * PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.
 
+
+### Information Architecture
+#### Database choice
+During the development phase I worked with **sqlite3** database which is installed with Django.   
+For deployment(production), a **PostgreSQL** database is provided by Heroku as an add-on.
+- The **User model** used in this project is provided by Django as a part of defaults `django.contrib.auth.models`. More information about Django’s authentication system can be found [here](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/).
+
+### Data Modelling
+
+#### Profile App
+##### Profile
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+---     | --- | --- | --- 
+ User | user | OneToOneField 'User' |  on_delete=models.CASCADE
+ Phone number | default_phone_number | CharField | max_length=20, null=True, blank=True
+Street Address 1 | default_street_address_1 | CharField | max_length=80, null=True, blank=True
+Street Address 2 | default_street_address_2 | CharField | max_length=80, null=True, blank=True
+ Town/City | default_town_or_city | CharField | max_length=40, null=True, blank=True
+ County | default_county | CharField | ax_length=80, null=True, blank=True
+ Postcode | default_postcode | CharField | max_length=20, null=True, blank=True
+ Country | default_country | CountryField | blank_label='Country', null=True, blank=True
+
+#### Products App
+##### Product
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+---     | --- | --- | --- 
+Name | name | CharField |  max_length=254
+Description | description | TextField | n/a
+Charity | charity | CharField | max_length=254, choices=sorted_charities, default = '',
+Price| price | DecimalField | max_digits=6, decimal_places=2
+Image| image | ImageField | null=True, blank=True
+
+##### Charities
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+---     | --- | --- | --- 
+Name | name | CharField |  max_length=254
+Description | description | TextField | n/a
+URL | url | URLField | max_length=200
+Image| image | ImageField | null=True, blank=True
+
+#### Checkout App
+##### Order
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+---     | --- | --- | --- 
+Order Number | order_number | CharField | max_length=32, null=False, editable=False
+User Profile | user_profile | ForeignKey 'UserProfile' | on_delete=models.SET_NULL, null=True, blank=True, related_name='orders'
+Full Name | full_name | CharField | max_length=50, null=False, blank=False
+Email | email | EmailField | max_length=254, null=False, blank=False
+Phone Number | phone_number | CharField | max_length=20, null=False, blank=False
+Country | country | CountryField | blank_label='Country *', null=False, blank=False
+Postcode | postcode | CharField | max_length=20, null=True, blank=True
+Town or City| town_or_city | CharField | max_length=40, null=False, blank=False 
+Street Address 1| street_address_1 | CharField | max_length=80, null=False, blank=False 
+Street Address 2 | street_address_2 | FCharField | max_length=80, null=True, blank=True 
+County | county | CharField | max_length=80, null=True, blank=True 
+Date | date | DateTimeField | auto_now_add=True 
+Delivery Cost | delivery_cost | max_digits=6, decimal_places=2, null=False, default=0
+Order Total | order_total | Decimal Field | max_digits=10, decimal_places=2, null=False, default=0 
+Grand Total | grand_total | Decimal Field | max_digits=10, decimal_places=2, null=False, default=0 
+Original Cart | original_cart | Text Field | null=False, blank=False, default='' 
+Stripe PID | stripe_pid | CharField | max_length=254, null=False, blank=False, default=''
+
+##### Order Item Details
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+---     | --- | --- | --- 
+Order | order | ForeignKey 'Order' | null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
+Product | product | ForeignKey 'Product' | null=False, blank=False, on_delete=models.CASCADE
+Quantity | quantity | IntegerField | null=False, blank=False, default=0
+LineItem Total| DecimalField | ImageField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
+
 ### Testing 
 You can view more in depth the testing required for this project in the following documentation: [Testing Document](https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/TESTING.md)
 
