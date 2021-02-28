@@ -3,6 +3,7 @@ Manual testing was conducted for each of the features implemented and user stori
 devices and in different browsers. 
 
 ### Responsiveness:
+Manually checked sites responsiveness on the different browsers and devices. [Testing Matrix](https://github.com/aprilha3097/TheGoodPeopleShop/blob/master/wireframes/Testing%20Matrix.pdf)
 
 #### NavBar:
 
