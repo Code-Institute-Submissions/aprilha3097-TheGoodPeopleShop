@@ -280,7 +280,7 @@ once a verified user pruchases the item it will be removed from the site.
     * PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.
 
 ### Testing 
-You can view more in depth the testing required for this project in the following documentation: [Testing Document](INSERT TESTING DOCUMENTATION LINK)
+You can view more in depth the testing required for this project in the following documentation: [Testing Document](https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/TESTING.md)
 
 ## Deployment
 
