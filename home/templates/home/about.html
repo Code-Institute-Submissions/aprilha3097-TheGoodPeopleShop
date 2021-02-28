@@ -12,59 +12,56 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
-    <div class="d-flex justify-content-center">
-        <div class="about-header">
-            <h1>TheGoodPeopleShop</h1>
-            <h4>
-                Donate your no longer wanted items to someone that wants them.
-                <br>
-                Then, all the proceeds from your sell will go to your favorite charity
-            </h4>
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="mb-4">About Us</h2>
+            <hr>
         </div>
     </div>
-    <div class="about-purpose">
-        <h1>Our Purpose</h1>
-        <p>
-            We are a sibling trio. We loved volunteering our time to many wonderful charities growing up.
-            There were times we wanted to donate to a cause when we couldn't volunteer, but we
-            didn't have the hard cash to do so. We donated our previously loved items to charity stores,
-            but found that charities we truly loved and wanted to doante to didn't have a store. So, we thought,
-            surely there are other good people that want these donations
-            that too want to donate to our favorite charities. So, then we created,
-            <strong>TheGoodPeopleShop</strong>.
-        </p>
-        <p>
-            We want to make donating easy. Simply create an account, input details of your previously loved
-            items on our simple form (make sure to add as much detail of the item and photos), then submit.
-            You choose which charity you want the proceeds to go to. We partner with loads of amazing charities.
-            Once that's all done, a good person will come around, buy your item and there we go! All the proceeds
-            to your favorite charity and someone gets something out of it too. Start now!
-        </p>
-    </div>
-
-
-    <div class="about-people">
-        <h2 style="text-align:center">Our Team</h2>
-        <div class="card-deck">
-            <div class="card">
-                <img class="card-img-top" src="{% static 'images/about/riley.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Riley Hayes Thompson</h5>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="{% static 'images/about/ezra.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Ezra Michael Thompson</h5>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="{% static 'images/about/charlie.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Charlie Sun Thompson</h5>
-                </div>
-            </div>
-        </div>
-    <div>
+<div class="about-purpose">
+    <h1>Our Purpose</h1>
+    <p>
+        We are a sibling trio. We loved volunteering our time to many wonderful charities growing up.
+        There were times we wanted to donate to a cause when we couldn't volunteer, but we
+        didn't have the hard cash to do so. We donated our previously loved items to charity stores,
+        but found that charities we truly loved and wanted to doante to didn't have a store. So, we thought,
+        surely there are other good people that want these donations
+        that too want to donate to our favorite charities. So, then we created,
+        <strong>TheGoodPeopleShop</strong>.
+    </p>
+    <p>
+        We want to make donating easy. Simply create an account, input details of your previously loved
+        items on our simple form (make sure to add as much detail of the item and photos), then submit.
+        You choose which charity you want the proceeds to go to. We partner with loads of amazing charities.
+        Once that's all done, a good person will come around, buy your item and there we go! All the proceeds
+        to your favorite charity and someone gets something out of it too. Start now!
+    </p>
 </div>
-{% endblock %}
+
+
+<div class="about-people">
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/about/riley.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Riley Hayes Thompson</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/about/ezra.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Ezra Michael Thompson</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="{% static 'images/about/charlie.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Charlie Sun Thompson</h5>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+    {% endblock %}
