@@ -379,13 +379,18 @@ py -m venv virtual
 Note, that this process will be different depending on IDE you use.     
     ```bash 
     import os  
-    os.environ["DEVELOPMENT"] = "True"    
-    os.environ["SECRET_KEY"] = "<Your Secret key>"    
+    os.environ["DEVELOPMENT"] = "True"   
+
+    os.environ["SECRET_KEY"] = "<Your Secret key>"  
+
     os.environ["STRIPE_PUBLIC_KEY"] = "<Your Stripe Public key>"    
+
     os.environ["STRIPE_SECRET_KEY"] = "<Your Stripe Secret key>"    
+
     os.environ["STRIPE_WH_SECRET"] = "<Your Stripe WH_Secret key>"    
+    
     os.environ["GOOGLE_MAP_KEY"] = "<Your Google Map key>" 
-     ```
+    ```
        
 Note: Read more about how to set up the Stripe keys in the [Stripe Documentation](https://stripe.com/docs/keys)
     
@@ -422,7 +427,9 @@ To deploy the project to [Heroku](https://heroku.com/) the following steps need 
 4: Install the following required for deployment:
 
 **gunicorn**
+
 **dj-database-url**
+
 **Psycopg** 
 
 These items are available already in the requirements.txt file. 
