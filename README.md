@@ -11,12 +11,41 @@ you are a registered user you can add an itemto sell.
 
 Deployed in Heroku: [Final Project](https://thegoodpeopleshop.herokuapp.com/)
 
-## UX and Elements of User Experiences
+
+## Table of Contents
+1. [**UX**](#ux)
+    - [**Wireframes**](#wireframes)
+    - [**User Stories**](#user-stories)
+
+2. [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Features Left to Implement**](#features-left-to-implement)
+
+3. [**Information Architecture**](#information-architecture)
+    - [**Data Modelling**](#data-modelling)
+
+4. [**Technologies Used**](#technologies-used)
+    - [**Languages**](#languages)
+    - [**Libraries and Frameworks**](#libraries-and-frameworks)
+    - [**Databases**](#Databases)
+
+5. [**Testing**](#testing)
+
+6. [**Deployment**](#deployment)
+    - [**Local Deployment**](#local-deployment)
+    - [**Heroku Deployment**](#heroku-deployment)
+
+7. [**Credits**](#credits)
+    - [**Code**](#code)
+    - [**Media**](#content-and-media)
+
+
+## UX
 
 ### Strategy: 
 The purpose of this site is to provide users a peer-to-peer experience. An ecommerce experience which benefits everyone.
 
-### Wireframes
+## Wireframes
 * Wireframes for the initial structural design of the site was created using [Balsamiq](https://balsamiq.com/).
 
 #### Desktop
@@ -91,7 +120,7 @@ Contact Us:
 
 <img src="https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/wireframes/mobile/mobile-contact-us.png" width="400">
 
-### User Stories:
+## User Stories:
 
 #### Generic user stories for all users 
 * As a user, I want to access the website from a computer, mobile or tablet to be able to use the sites functionality anywhere
@@ -119,9 +148,11 @@ Contact Us:
 * As the site owner, I want to be able to edit or update product details, so owner can manually change details of the product
 * As the site owner, I want to be able to delete a product, so if the product is not appropriate or not available the owner can manually do this 
 
-### Features: 
+## Features: 
 
-#### Navbar
+### Existing Features 
+
+##### Navbar
 * The navbar is fixed to the top of the site at all times. This allows users to easily access pages throughout the site. 
 TheGoodPeopleShop's basic textlogo is avilable at the top left corner of the screen. Onclick of this directs users back to the home page.
 The main navigation links (All Products, Abou, Charity and Contact Us) are clearly visable at the top of the screen on large screens.
@@ -134,7 +165,7 @@ Navbar is collapsed into a magnifying glass when on mobile and tablet view, this
 * The navbar also contains the cart icon, which on click will redirect users to the cart page. User is able to view items placed into the cart in this view.
 The cart icon will display the total price of items that have been added to the cart. The cart icon changed to a light blue once user has placed items into the cart. 
 
-#### Home
+##### Home
 * The home page is a simple design. The page consists of a hero image with button that directs users to the all products view.
 The purpose of the home page is to attract users to the business. It provides a quick idea of what the purpose of the site is and encourages users to 
 continue to the site and navigate throughout. 
@@ -146,12 +177,12 @@ continue to the site and navigate throughout.
 * The site includes an About page. The page will provide users the back stories to the founders purpose in creating the site. It will also
 provide more details of how the site works. 
 
-#### Contact Page
+##### Contact Page
 * The contacts page contains a form that allows users to provide full name, email address and a message that they may submit to the sites owners.
 If the user has any questions or queries on the site, they may submit an easy form that we will recieve. Once user has submitted the form successfully,
 user will be redirected to the contact success form. 
 
-#### Products Page
+##### Products Page
 * The All Products page will display products in a card format with Bootstrap stylings. All of the products will redirect users to the products details view when user clicks on
 the product image.
 
@@ -165,7 +196,7 @@ is only 1 of the available items for sell.
 Site owner will be able to amend the details of the page and update. This will redirect to the product details page where the amended details will be available for view.
 The delete button will delete the item from the products view and remove the item from the products view. 
 
-#### Shopping Cart:
+##### Shopping Cart:
 * When the cart icon is selected, the user will be redirected to the shopping cart view. If there are no items added in the cart, the page 
 will display that there are no items currently in their cart. The Continue Shopping button will direct users back to the products page.
 
@@ -178,7 +209,7 @@ A toast message will display when user removes an item from the cart.
 * A calculation of the cart subtotal, delivery cost and grand total of the cart at bottom of page.
 The Checkout button will direct users to the checkout page where they can submit a form with their payment information
 
-#### Checkout Page:
+##### Checkout Page:
 * An order summery of the available items in the cart (name, image and price) is avilable to view.
 The Edit Cart link will direct user back to the cart page if user wants to amend an item in their cart.
 The checkout form will require users to submit details of themselves including delivery information and payment details.
@@ -186,11 +217,11 @@ The checkout form will require users to submit details of themselves including d
 * If the user already has a profile with the shipping information saved, the form will be populated with this information. 
 The save info checkbox will save the users delivery information if user is already registered. 
 
-#### Checkout Success:
+##### Checkout Success:
 * Once form has been submitted successfully, user will be directed to the order summery page. 
 They will be provided an order summery containing information of the items that the user has purchased.
 
-#### Profile Page:
+##### Profile Page:
 * The profile page is only avilable only for authenticated users.
 
 * The profile page will contain the users personal information, also displaying the users shipping information if already saved from previous checkouts.
@@ -201,26 +232,25 @@ users to the order confirmation page. A toast alert will display notifying users
 
 #### Django Allath Features:
 
-#### Sign Up:
+##### Sign Up:
 * The sign up page allows users to create a new account. User will be asked to complete a form that requires their email address, a username and password.
 Once form has been submitted a verification email will be sent to the user's email address to complete the registration process.
 The sign up page will only be available to users that do not have an account. Users will be notified if email or username has been taken.
 Users that already have an account will be directed to login.
 
-#### Login:
+##### Login:
 * The login page has a form that requires username and password fields. If login was successfull, user wil be redirected the the home page and an alert will confirm user has 
 successfully logged in. Otherwise, user will be warned that their information is incorrect. 
 User will be able to reset their password with the Forgot Password funcationality. User requires their email that they used to register, they will be sent an email to reset their password. 
 
-#### Logout:
+##### Logout:
 * The logout button will only be availble to users that are already logged in. On clicking the logout button, users will be asked again if they want to logout. 
 Once user confirms, they will be logged out of their session and redirected to the home page. A toast message will display confirming user has been logged out successully. 
 
-#### Back to Top button:
+##### Back to Top button:
 * The back to the top button at the bottom of the view all products page will jump users back to the top of the site.
 
-
-### Future Features to Implement
+## Future Features to Implement
 
 #### User Authentication and Permissions
 * Feature to implement is for users that add in an item are able to perform CRUD functionality on the item that they had added themselves.
@@ -234,55 +264,7 @@ to avilablility of the items the seller is able to provide.
 * When a buyer pruchases an item, it is assumed there is only a quantity of 1 for that item. To prevent other users from pruchasing that item, 
 once a verified user pruchases the item it will be removed from the site.
 
-
-## Technologies Used
-
-### Languages
-1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
-    * The markup language used for structuring and presenting content of the site
-2. [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-    * The Cascading Style Sheet used to to design the site
-3. [Javascript](https://en.wikipedia.org/wiki/JavaScript)
-    * The programming langauge to program specific behaviors for the application
-4. [Python](https://www.python.org/)
-    * The programming language to program the backend behaviors for the site
-5. [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
-    * The templating language for Python3 to display the back-end-dat into HTML
-
-### Libraries and Tools 
-1. [Django](https://www.djangoproject.com/)
-    * Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
-2. [Boostrap](https://getbootstrap.com/)
-    * Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
-3. [GoogleFonts](https://fonts.google.com/)
-    * Used Google fonts for main font style for site.  
-4. [FontAwesome](https://fontawesome.com/)
-    * Toolkit and icon set for vector icons
-5. [GUnicorn](https://gunicorn.org/)
-    * Python Web Server Gateway Interface HTTP server.
-6. [Psycopg2](https://pypi.org/project/psycopg2/)
-    * Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
-7. [Stripe](https://stripe.com/gb)
-    * Payment infrastructure for processing and authenticating secure payments
-8. [DjangoCrispyForms](https://django-crispy-forms.readthedocs.io/en/latest/)
-    * Render forms in a more elegent way with Django forms
-9. [GitPod](https://www.gitpod.io/)
-    * Online IDE
-10. [Git](https://git-scm.com/)
-    * Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
-11. [GitHub](https://github.com/)
-    * Used for hosting my code and controling versions of my project. 
-12. [Heroku](https://dashboard.heroku.com/)
-    * Heroku is a cloud platform as a service supporting several programming languages. 
-
-### Databases
-1. [SQlite3](https://www.sqlite.org/index.html)
-    * SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
-2. [PostgreSQL](https://www.postgresql.org/)
-    * PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.
-
-
-### Information Architecture
+## Information Architecture
 
 ### Data Modelling
 
@@ -347,16 +329,62 @@ Product | product | ForeignKey 'Product' | null=False, blank=False, on_delete=mo
 Quantity | quantity | IntegerField | null=False, blank=False, default=0
 LineItem Total| DecimalField | ImageField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
 
-### Testing 
-You can view more in depth the testing required for this project in the following documentation: [Testing Document](https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/TESTING.md)
+## Technologies Used
 
-## Deployment
+### Languages
+1. [HTML5](https://en.wikipedia.org/wiki/HTML5)
+    * The markup language used for structuring and presenting content of the site
+2. [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+    * The Cascading Style Sheet used to to design the site
+3. [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+    * The programming langauge to program specific behaviors for the application
+4. [Python](https://www.python.org/)
+    * The programming language to program the backend behaviors for the site
+5. [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+    * The templating language for Python3 to display the back-end-dat into HTML
+
+### Libraries and Frameworks 
+1. [Django](https://www.djangoproject.com/)
+    * Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+2. [Boostrap](https://getbootstrap.com/)
+    * Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+3. [GoogleFonts](https://fonts.google.com/)
+    * Used Google fonts for main font style for site.  
+4. [FontAwesome](https://fontawesome.com/)
+    * Toolkit and icon set for vector icons
+5. [GUnicorn](https://gunicorn.org/)
+    * Python Web Server Gateway Interface HTTP server.
+6. [Psycopg2](https://pypi.org/project/psycopg2/)
+    * Psycopg is the most popular PostgreSQL database adapter for the Python programming language.
+7. [Stripe](https://stripe.com/gb)
+    * Payment infrastructure for processing and authenticating secure payments
+8. [DjangoCrispyForms](https://django-crispy-forms.readthedocs.io/en/latest/)
+    * Render forms in a more elegent way with Django forms
+9. [GitPod](https://www.gitpod.io/)
+    * Online IDE
+10. [Git](https://git-scm.com/)
+    * Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+11. [GitHub](https://github.com/)
+    * Used for hosting my code and controling versions of my project. 
+12. [Heroku](https://dashboard.heroku.com/)
+    * Heroku is a cloud platform as a service supporting several programming languages. 
+
+### Databases
+1. [SQlite3](https://www.sqlite.org/index.html)
+    * SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
+2. [PostgreSQL](https://www.postgresql.org/)
+    * PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.
+
+
+## Testing 
+You can view more in depth the testing required for this project in the following documentation: [Testing Document](https://github.com/aprilha3097/THIS_IS_MILESTONE_4/blob/master/TESTING.md)
 
 ## Deployment
 
 *TheGoodPeopleShop* was developed using GitPod as its IDE and Github for the verions control.
 
-### Cloning *TheGoodPeopleShope* from GitHub ###
+### Local Deployment 
+#### Cloning *TheGoodPeopleShope* from GitHub ####
 
 1: **Clone** the *TheGoodPeopleShop* repository by downloading from [source](https://github.com/aprilha3097/TheGoodPeopleShop.git),
 
@@ -472,10 +500,9 @@ These items are available already in the requirements.txt file.
 
 15: You can connect Heroku to GitHub to automatically deploy each time you push to GitHub.    
 
+## Credit
 
-### Credit
-
-#### Code
+### Code
 * This project was developed by following the Code Institutes video lessons and project, Boutique Ado. The stylings and basic funcationalities were
 influced by the project. TheGoodPeopleShop project was modified to fit the purposes of the site. 
 
@@ -487,7 +514,7 @@ contact us funcationality.
 * [Django for Begineers](https://djangoforbeginners.com/) & [Django for Professionals](https://djangoforprofessionals.com/) by William S. Vincent were
 used as great resources in understanding the complexities of Django.
 
-#### Media
+### Media
 * All images in this site were discovered through Google Images. The lower quality images reflect the type of images user will
 upload when selling items on the site. 
 * Charity images were taken from their respected charities website. 
