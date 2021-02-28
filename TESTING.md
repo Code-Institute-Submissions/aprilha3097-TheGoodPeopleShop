@@ -133,29 +133,17 @@ Manually checked sites responsiveness on the different browsers and devices. [Te
 ### Validators:
 
 #### HTML:
-All HTML files will be tested using the W3C Markup Validation Services
-https://validator.w3.org/#validate_by_input
+All HTML files have been tested using the [W3C Markup Validation Serices](https://validator.w3.org/#validate_by_input)
 
 #### CSS:
-All CSS files will be tested through the W3C CSS Validation Services. 
-https://jigsaw.w3.org/css-validator/
+All CSS files have been test with the [W3 CSS Validation Services](https://jigsaw.w3.org/css-validator/)
 
 #### Javascript:
-All JS scripts will be tested with JHint
-https://jshint.com/
+All Javascript files were checked with [JS Hints](https://jshint.com/)
 
 #### Python:
-Python files will be tested for PEP8 compliant code using the PEP8 Online validator.
-http://pep8online.com/
+Python files were checked to be PEP8 compliant with the following python3 command:
 
-
-Compatibility and Responsiveness
-
-BUGS:
-
-FIXES:
-
-
-
-
-
+```
+python3 -m flake8
+```

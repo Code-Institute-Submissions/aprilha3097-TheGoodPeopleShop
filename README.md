@@ -250,7 +250,7 @@ Once user confirms, they will be logged out of their session and redirected to t
 ##### Back to Top button:
 * The back to the top button at the bottom of the view all products page will jump users back to the top of the site.
 
-## Future Features to Implement
+## Features Left to Implement
 
 #### User Authentication and Permissions
 * Feature to implement is for users that add in an item are able to perform CRUD functionality on the item that they had added themselves.
@@ -500,7 +500,7 @@ These items are available already in the requirements.txt file.
 
 15: You can connect Heroku to GitHub to automatically deploy each time you push to GitHub.    
 
-## Credit
+## Credits
 
 ### Code
 * This project was developed by following the Code Institutes video lessons and project, Boutique Ado. The stylings and basic funcationalities were
