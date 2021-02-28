@@ -11,8 +11,9 @@ pillow = "*"
 django-countries = "*"
 stripe = "*"
 dj-database-url = "*"
-psycopg2 = "*"
 psycopg2-binary = "*"
+gunicorn = "*"
+heroku = "*"
 
 [dev-packages]
 
